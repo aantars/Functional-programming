@@ -12,13 +12,15 @@ public class FP01Functional {
 
     private static void printAListOFNumbersFunctional(List<Integer> numbers) {
 
-         numbers.stream().filter(FP01Functional::isEven).forEach(System.out::println);
+         numbers.stream().filter(integer -> integer%3==0).forEach(System.out::println);
     }
 
+    }
+
+    /*
     private static boolean isEven(Integer integer) {
          return integer%2==0;
-    }
-    }
+    }*/
 
     /*private static void printNumber(Integer integer) {
          System.out.println(integer);
